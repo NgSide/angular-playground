@@ -6,6 +6,7 @@
     "start": "ng serve",
     "start-route-guards": "ng serve --project=learn-route-guards",
     "start-pipes": "ng serve --project=learn-pipes",
+    "start-decorators": "ng serve --project=learn-decorators",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
