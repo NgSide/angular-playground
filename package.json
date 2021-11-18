@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-route-guards": "ng serve --project=learn-route-guards",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
