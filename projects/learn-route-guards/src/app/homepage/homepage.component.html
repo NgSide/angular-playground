@@ -1,0 +1,10 @@
+<h1>Homepage</h1>
+
+<h3>Utilisateur actif</h3>
+<div *ngIf="user$ | async as user">
+  <p>Nom: {{ user.name }}</p>
+  <p>Est connecté: {{ user.isLoggedIn }}</p>
+  <p>Role: {{ user.role }}</p>
+</div>
+
+<button routerLink="/admin">Accéder au Dashboard Admin</button>
