@@ -1,0 +1,22 @@
+.container {
+  margin: 32px;
+  width: 450px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &__picture {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+}
+
+.legend {
+  margin: 4px;
+
+  &__author {
+    margin: 0 4px;
+    font-style: italic;
+    font-size: 12px;
+  }
+}

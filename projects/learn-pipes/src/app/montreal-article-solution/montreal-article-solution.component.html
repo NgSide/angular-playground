@@ -1,0 +1,15 @@
+<h3>Solution - Article complet</h3>
+
+<div class="container">
+  <img
+    class="container__picture"
+    [src]="pictures | getRandomElement"
+    alt="A picture of Montreal"
+  />
+  <p class="legend">
+    <span class="legend__content">{{ legendContent | titlecase }}</span>
+    <span class="legend__author">{{
+      legendAuthor | titlecase | from: ('Source' | uppercase)
+    }}</span>
+  </p>
+</div>

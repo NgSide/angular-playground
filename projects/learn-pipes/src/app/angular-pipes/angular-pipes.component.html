@@ -1,0 +1,54 @@
+<h1>Angular pipes</h1>
+
+<!-- UPPERCASE PIPE-->
+<div class="container">
+  <h3 class="container__title">Uppercase Pipe</h3>
+  <p>{{ "Ce texte doit s'afficher en majuscule" | uppercase }}</p>
+</div>
+
+<!-- LOWERCASE PIPE -->
+<div class="container">
+  <h3 class="container__title">Lowercase Pipe</h3>
+  <p>{{ "Ce texte doit s'afficher en minuscule" | lowercase }}</p>
+</div>
+
+<!-- ASYNC PIPE -->
+<div class="container">
+  <h3 class="container__title">Async pipe</h3>
+  <ul>
+    <li *ngFor="let browser of browsers$ | async">
+      {{ browser }}
+    </li>
+  </ul>
+</div>
+
+<!-- JSON PIPE -->
+<div class="container">
+  <h3 class="container__title">JSON Pipe</h3>
+  <p>{{ news }}</p>
+  <p>{{ news | json }}</p>
+</div>
+
+<!-- DATE PIPE -->
+<div class="container">
+  <h3 class="container__title">Date Pipe</h3>
+  <p>{{ currentDate | date: 'fullDate' }}</p>
+  <p>{{ currentDate | date: 'medium' }}</p>
+  <p>{{ currentDate | date: 'shortTime' }}</p>
+  <p>{{ currentDate | date: 'HH:mm:ss' }}</p>
+  <p>{{ currentDate | date: 'hh:mm:ss' }}</p>
+  <p>Année {{ currentDate | date: 'yy' }}</p>
+  <p>Année {{ currentDate | date: 'yyyy' }}</p>
+</div>
+
+<!-- CURRENCY PIPE -->
+<div class="container">
+  <h3 class="container__title">Currency Pipe</h3>
+  <p>{{ itemPrice }}</p>
+  <p>{{ itemPrice | currency }}</p>
+  <p>{{ itemPrice | currency: 'CAD':'symbol' }}</p>
+  <p>{{ itemPrice | currency: 'EUR' }}</p>
+  <p>{{ itemPrice | currency: 'EUR':'code' }}</p>
+  <p>{{ itemPrice | currency: 'EUR':'code':'1.2-2':'fr' }}</p>
+  <p>{{ itemPrice | currency: 'EUR':'symbol':'1.2-2':'fr' }}</p>
+</div>
